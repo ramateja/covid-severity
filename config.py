@@ -1,0 +1,7 @@
+import os
+
+BASE_DIR="."
+APP_FOLDER = "app"
+INCOMING_FILES_PATH = "data"
+VISUALISATION_FILES_PATH = "data"
+STATIC_FILES_PATH = "templates"

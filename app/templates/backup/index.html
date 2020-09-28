@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <head>
+         <title>HTML Forms</title>
+      </head>
+      <p>Upload file to be analysed</p>
+      <form action="/covid" method="post" enctype="multipart/form-data">
+        Upload Image:<br> <input type="file" name="scan">
+        <br>
+        <input type="hidden" name="viz" value="1">
+         <br>
+         
+         <br>
+         <input type="submit"  value="Submit">
+      </form>
+   </body>
+</html>

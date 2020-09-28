@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        table.center {
+          margin-left:auto; 
+          margin-right:auto;
+        }
+    </style>    
+</head>
+<body>
+    {% if results %}
+        <table style="center" width="80%">
+            <tr>
+                <th style="text-align:center">Input Image</th>
+                <th style="text-align:center">Visualisation</th>
+                <th style="text-align:center">geographic_extent (0-8)</th>
+                <th style="text-align:center">opacity (0-6)</th>
+
+            </tr>
+            <tbody>
+            {% for input,vis,geo,opac in results %}
+                <tr>
+                    <td style="text-align:center"><img src="{{ input }}" alt="{{ img_name }}"></td>
+                    <td style="text-align:center"><img src="{{ vis }}" alt="{{ img_name }}"></td>
+                    <td style="text-align:center">{{ geo }}</td>
+                    <td style="text-align:center">{{ opac }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        No results :(
+    {% endif %}
+</body>
+</html>

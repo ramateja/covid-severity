@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Results">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Results</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Results.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 2.23.0, nicepage.com">
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="Results">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-7020"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="home" style="padding: 10px 20px;">Home</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="home" style="padding: 10px 20px;">Home</a>
+</li></ul>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="sec-fea8" data-image-width="1280" data-image-height="853">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-heading-font u-text u-text-default u-title u-text-1">Results</h1>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+          <table class="u-table-entity u-table-entity-1">
+            <colgroup>
+              <col width="25%">
+              <col width="25%">
+              <col width="25%">
+              <col width="25%">
+            </colgroup>
+            <tbody class="u-align-center u-table-body">
+              <tr style="height: 64px;">
+                <td class="u-border-3 u-border-white u-table-cell u-table-cell-1">Source Image</td>
+                <td class="u-border-3 u-border-white u-table-cell u-table-cell-2">Estimated Region</td>
+                <td class="u-border-3 u-border-white u-table-cell u-table-cell-3">Geographic Extent</td>
+                <td class="u-border-3 u-border-white u-table-cell u-table-cell-4">Opacity</td>
+              </tr>
+              <tr style="height: 64px;">
+                <td class="u-border-1 u-border-grey-30 u-table-cell" style="text-align:center"><img src="{{ input }}" alt="{{ img_name }}"></td>
+                <td class="u-border-1 u-border-grey-30 u-table-cell" style="text-align:center"><img src="{{ vis }}" alt="{{ img_name }}"></td>
+                <td class="u-border-1 u-border-grey-30 u-table-cell" style="text-align:center">{{ geo }}</td>
+                <td class="u-border-1 u-border-grey-30 u-table-cell" style="text-align:center">{{ opac }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-2" id="sec-aeca">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h4 class="u-text u-text-1">Interpretation</h4>
+        <p class="u-text u-text-2">Estimated Region:&nbsp; Image shows which region of the xray weighs in most towards the prediction<br>Geographic Extent :&nbsp;The extent of lung involvement by ground glass opacity or consolidation for each lung<br>Opacity: The degree of opacity<br>
+          <br>Geographic Extent can range from 0-8<br>Opacity can range from 0-6
+        </p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-cf4e">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h3 class="u-text u-text-1">Disclaimer</h3>
+        <p class="u-text u-text-2">This is not for medical use. Images are saved without any other trackable information.</p>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-3a87"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">This is not for medical use<br>
+        </p>
+      </div></footer>
+    
+  </body>
+</html>
